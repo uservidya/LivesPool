@@ -8,5 +8,3 @@ install:
 script:
     - cp "starter.db" "cutthroat_test.db"
     - nosetests --with-cov --cov-report term-missing --cov cutthroat src/tests/
-after_success:
-    coveralls --verbose
